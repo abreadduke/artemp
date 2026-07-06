@@ -1,0 +1,7 @@
+[Unit]
+Description=Arduino temperature display service for %I
+
+[Service]
+Environment="PATH=/bin/"
+ExecStart=/bin/artempd /dev/%I
+Type=simple
